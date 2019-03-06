@@ -1,5 +1,4 @@
 // DEPENDENCIES
-// =====================================
 // Read and set environment variables
 require("dotenv").config();
 
@@ -50,7 +49,7 @@ function LiriListening (userInput, userCommand) {
       getMeMovie(userCommand);
       break;
     
-    case "Follow-my-ommand":
+    case "Follow-my-command":
       doWhatItSays(userCommand);
       break;
 
@@ -159,7 +158,7 @@ function getMeMovie(movie) {
 
 
 // Random Feature Function
-function getRandom() {
+function doWhatItSays() {
   fs.readFile("random.txt", "utf8", function (err, data) {
       if (err) {
           return console.log(err);
